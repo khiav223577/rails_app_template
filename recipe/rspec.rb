@@ -1,10 +1,10 @@
-eval_gem "rspec-rails"
-eval_gem "spring-commands-rspec"
-eval_gem "timecop"
-eval_gem "shoulda-matchers"
-eval_gem "database_cleaner"
-eval_gem "simplecov"
-eval_gem "factory_bot_rails"
+init_gem "rspec-rails"
+init_gem "spring-commands-rspec"
+init_gem "timecop"
+init_gem "shoulda-matchers"
+init_gem "database_cleaner"
+init_gem "simplecov"
+init_gem "factory_bot_rails"
 
 start = 8
 lines = File.readlines("spec/rails_helper.rb")

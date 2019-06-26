@@ -14,11 +14,11 @@ def eval_file_content(file_path)
   eval File.read(file_path)
 end
 
-def eval_gem(name)
+def init_gem(name)
   eval_file_content File.join(gem_path, "#{name}.rb")
 end
 
-def eval_recipe(name)
+def recipe(name)
   eval_file_content File.join(recipe_path, "#{name}.rb")
 end
 
