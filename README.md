@@ -11,8 +11,3 @@ See official doc [Rails Application Templates](https://guides.rubyonrails.org/ra
 ```
 rails new <project_name> --api -d postgresql --skip-test -m template/api.rb
 ```
-
-## TODO
-
-- Contorller helpers
-- User auth
