@@ -1,4 +1,5 @@
 gem "rspec-rails", group: [:development, :test]
+run "bundle install"
 run "rails g rspec:install"
 environment <<-CODE
 config.generators do |g|

@@ -17,3 +17,5 @@ recipe "rspec"
 recipe "config"
 recipe "action_storage"
 # recipe "google-cloud-storage"
+
+run "bundle install"

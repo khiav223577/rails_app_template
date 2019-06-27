@@ -5,6 +5,7 @@ init_gem "shoulda-matchers"
 init_gem "database_cleaner"
 init_gem "simplecov"
 init_gem "factory_bot_rails"
+init_gem "fakeredis"
 
 start = 8
 lines = File.readlines("spec/rails_helper.rb")
