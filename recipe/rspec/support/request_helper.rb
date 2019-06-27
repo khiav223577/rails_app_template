@@ -26,13 +26,8 @@ module RequestHelper
     [File.join(uri), params: params, headers: api_headers]
   end
 
-  def response_body
-    JSON.parse(response.body)
-  end
-
-  def expect_response_header(status, content_type = "application/json")
-    expect(response).to have_http_status status
-    expect(response.content_type).to eq content_type
+  def request_params(*keys)
+    keys.map { |k| [k, send(k)] }.to_h
   end
 
   def login(user)
