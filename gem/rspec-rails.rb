@@ -9,6 +9,7 @@ config.generators do |g|
                    helper_specs: true,
                    routing_specs: false,
                    controller_specs: false,
-                   request_specs: true
+                   request_specs: true,
+                   mailer_specs: false
 end
 CODE
