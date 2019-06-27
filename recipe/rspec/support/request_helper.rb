@@ -1,8 +1,4 @@
 module RequestHelper
-  def file_fixture(filename)
-    "#{Rails.root}/spec/fixtures/#{filename}"
-  end
-
   def post(uri, options = {})
     super(*request_to(uri, options))
   end
