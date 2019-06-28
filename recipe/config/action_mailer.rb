@@ -29,5 +29,5 @@ update_yaml "config/settings.yml",
             "mailer_smtp_domain" => "mg.example.com",
             "mailer_smtp_authentication" => "plain",
             "mailer_smtp_enable_starttls_auto" => true,
-            "mailer_user_name" => "postmaster@mg.example.com",
-            "mailer_password" => ""
+            "mailer_smtp_user_name" => "postmaster@mg.example.com",
+            "mailer_smtp_password" => ""
