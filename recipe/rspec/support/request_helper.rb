@@ -42,6 +42,9 @@ module RequestHelper
     Rails.application.load_seed
   end
 
+  def mailer
+    ActionMailer::Base.deliveries
+  end
 end
 
 RSpec.configure do |config|
