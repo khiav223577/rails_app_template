@@ -1,3 +1,5 @@
+require "psych"
+
 def root_path
   File.dirname(__dir__)
 end
