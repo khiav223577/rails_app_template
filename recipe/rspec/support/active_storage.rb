@@ -4,6 +4,6 @@ RSpec.configure do |config|
   end
 
   config.after(:suite) do
-    FileUtils.rm_r("tmp/storage")
+    FileUtils.rm_rf("tmp/storage")
   end
 end
