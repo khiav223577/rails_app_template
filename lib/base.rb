@@ -1,3 +1,4 @@
+require "yaml"
 require "psych"
 
 def root_path
