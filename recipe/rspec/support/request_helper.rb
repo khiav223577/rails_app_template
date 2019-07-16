@@ -35,7 +35,7 @@ module RequestHelper
     # @api_headers_with_auth = user.create_new_auth_token
 
     # For token-baesd login:
-    @access_token = user.create_access_token
+    @access_token = user.generate_access_token
   end
 
   def seed_db
