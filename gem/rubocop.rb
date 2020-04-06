@@ -33,7 +33,7 @@ Metrics/ClassLength:
 Metrics/AbcSize:
   Enabled: false
 
-Layout/IndentFirstArrayElement:
+Layout/FirstArrayElementIndentation:
   Enabled: false
 
 Metrics/PerceivedComplexity:
@@ -77,7 +77,7 @@ Layout/AlignHash:
   EnforcedHashRocketStyle: table
   Enabled: true
 
-Layout/IndentFirstHashElement:
+Layout/FirstHashElementIndentation:
   Description: 'Checks the indentation of the first key in a hash literal.'
   EnforcedStyle: consistent
   Enabled: true
@@ -91,7 +91,7 @@ Layout/EmptyLineAfterGuardClause:
 Lint/AmbiguousBlockAssociation:
   Enabled: false
 
-Lint/HandleExceptions:
+Lint/SuppressedException:
   Enabled: false
 
 Naming/MemoizedInstanceVariableName:
