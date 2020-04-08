@@ -5,17 +5,16 @@ file ".rubocop.yml", <<-CODE
 AllCops:
   Exclude:
     - bin/*
+    - db/migrate/*.rb
     - db/schema.rb
-    - config/spring.rb
-    - vendor/**/*
+    - Gemfile
+    - config.ru
+    - Rakefile
 
 Documentation:
   Enabled: false
 
 Metrics/CyclomaticComplexity:
-  Enabled: false
-
-AsciiComments:
   Enabled: false
 
 Metrics/LineLength:
@@ -33,13 +32,13 @@ Metrics/ClassLength:
 Metrics/AbcSize:
   Enabled: false
 
-Layout/FirstArrayElementIndentation:
-  Enabled: false
-
 Metrics/PerceivedComplexity:
   Enabled: false
 
 Metrics/BlockLength:
+  Enabled: false
+
+Metrics/BlockNesting:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
@@ -52,6 +51,9 @@ Style/StringLiterals:
 Style/RedundantReturn:
   Enabled: false
 
+Style/GuardClause:
+  Enabled: false
+
 Style/WordArray:
   EnforcedStyle: brackets
 
@@ -61,42 +63,6 @@ Style/SymbolArray:
 Style/ClassAndModuleChildren:
   Enabled: false
 
-Style/EmptyCaseCondition:
-  Enabled: false
-
-Style/NumericLiterals:
-  Enabled: false
-
 Style/NumericPredicate:
-  Enabled: false
-
-Style/CommentedKeyword:
-  Enabled: false
-
-Layout/AlignHash:
-  EnforcedHashRocketStyle: table
-  Enabled: true
-
-Layout/FirstHashElementIndentation:
-  Description: 'Checks the indentation of the first key in a hash literal.'
-  EnforcedStyle: consistent
-  Enabled: true
-
-Layout/EndOfLine:
-  Enabled: false
-
-Layout/EmptyLineAfterGuardClause:
-  Enabled: false
-
-Lint/AmbiguousBlockAssociation:
-  Enabled: false
-
-Lint/SuppressedException:
-  Enabled: false
-
-Naming/MemoizedInstanceVariableName:
-  Enabled: false
-
-Performance/TimesMap:
   Enabled: false
 CODE
