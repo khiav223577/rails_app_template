@@ -65,4 +65,7 @@ Style/ClassAndModuleChildren:
 
 Style/NumericPredicate:
   Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
 CODE
