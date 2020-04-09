@@ -78,6 +78,9 @@ Style/HashTransformKeys:
 Style/HashTransformValues:
   Enabled: false
 
+Style/NegatedIf:
+  Enabled: false
+
 Layout/HashAlignment:
   EnforcedHashRocketStyle: table
   Enabled: true
