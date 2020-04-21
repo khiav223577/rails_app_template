@@ -63,6 +63,9 @@ Style/SymbolArray:
 Style/ClassAndModuleChildren:
   Enabled: false
 
+Style/ConditionalAssignment:
+  EnforcedStyle: assign_inside_condition
+
 Style/NumericPredicate:
   Enabled: false
 
