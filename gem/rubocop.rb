@@ -65,6 +65,7 @@ Style/ClassAndModuleChildren:
 
 Style/ConditionalAssignment:
   EnforcedStyle: assign_inside_condition
+  IncludeTernaryExpressions: false
 
 Style/NumericPredicate:
   Enabled: false
