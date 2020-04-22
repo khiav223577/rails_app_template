@@ -94,4 +94,8 @@ Lint/RaiseException:
 
 Lint/StructNewOverride:
   Enabled: true
+
+Naming/MethodParameterName:
+  MinNameLength: 1
+  AllowNamesEndingInNumbers: true
 CODE
