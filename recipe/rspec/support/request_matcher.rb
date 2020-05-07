@@ -8,7 +8,7 @@ end
 
 RSpec::Matchers.define :have_message_code do |expected_key|
   match do |actual|
-    actual.parsed_body["message_code"] == expected_key.to_s
+    actual.parsed_body["result"]["message_code"] == expected_key.to_s
   end
 end
 
