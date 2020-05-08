@@ -17,7 +17,7 @@ module RequestHelper
 
   def request_to(uri, params: {}, headers: {})
     api_headers = {
-      "ACCEPT" => "application/json",
+      "ACCEPT"      => "application/json",
       "HTTP_ACCEPT" => "application/json"
     }
     api_headers.merge!(@api_headers_with_auth || {})
@@ -28,14 +28,6 @@ module RequestHelper
 
   def request_params(*keys)
     keys.map { |k| [k, send(k)] }.to_h
-  end
-
-  def login(user)
-    # For devise:
-    # @api_headers_with_auth = user.create_new_auth_token
-
-    # For token-baesd login:
-    @access_token = user.generate_access_token
   end
 
   def seed_db
