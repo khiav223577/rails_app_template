@@ -12,10 +12,10 @@ start = lines.index{|s| s =~ /Add additional requires below this line. Rails is 
 Dir[File.join(recipe_path, "rspec/support/*")].each do |f|
   lib_name = File.basename(f, ".rb")
   file "spec/support/#{lib_name}.rb", File.read(f)
-  lines.insert(start += 1, "require \"support/#{lib_name}\"\n")
+  lines.insert(start += 1, "require 'support/#{lib_name}'\n")
 end
 
-lines.unshift "require \"simplecov\"\n",
+lines.unshift "require 'simplecov'\n",
               "SimpleCov.start\n"
 
 File.open("spec/rails_helper.rb", "w") do |f|

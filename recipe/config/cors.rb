@@ -2,9 +2,9 @@ environment <<-CODE
 config.middleware.use Rack::Cors do
   allow do
     origins Settings.cors_origins
-    resource "*",
+    resource '*',
              headers: :any,
-             expose: ["access-token", "expiry", "token-type", "uid", "client"],
+             expose: %w[access-token expiry token-type uid client],
              methods: [:get, :post, :options, :delete, :put]
   end
 end
