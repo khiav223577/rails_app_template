@@ -7,13 +7,12 @@ init_gem "simplecov"
 init_gem "factory_bot_rails"
 init_gem "fakeredis"
 
-start = 8
+start = lines.index{|s| s =~ /Add additional requires below this line. Rails is not loaded until this point!/ } || 9
 lines = File.readlines("spec/rails_helper.rb")
 Dir[File.join(recipe_path, "rspec/support/*")].each do |f|
   lib_name = File.basename(f, ".rb")
   file "spec/support/#{lib_name}.rb", File.read(f)
-  lines.insert(start, "require \"support/#{lib_name}\"\n")
-  start += 1
+  lines.insert(start += 1, "require \"support/#{lib_name}\"\n")
 end
 
 lines.unshift "require \"simplecov\"\n",
