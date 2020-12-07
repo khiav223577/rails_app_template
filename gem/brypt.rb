@@ -1,1 +1,1 @@
-gem "bcrypt"
+gem 'bcrypt'

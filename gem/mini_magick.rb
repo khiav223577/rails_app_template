@@ -1,1 +1,1 @@
-gem "mini_magick"
+gem 'mini_magick'

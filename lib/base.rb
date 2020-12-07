@@ -1,16 +1,16 @@
-require "yaml"
-require "psych"
+require 'yaml'
+require 'psych'
 
 def root_path
   File.dirname(__dir__)
 end
 
 def gem_path
-  File.join(root_path, "gem")
+  File.join(root_path, 'gem')
 end
 
 def recipe_path
-  File.join(root_path, "recipe")
+  File.join(root_path, 'recipe')
 end
 
 def eval_file_content(file_path)
@@ -34,5 +34,5 @@ def update_yaml(file_path, data)
     node.quoted = false
     node.style  = Psych::Nodes::Scalar::ANY
   end
-  File.open(file_path, "w") { |f| f.write(ast.yaml) }
+  File.open(file_path, 'w'){|f| f.write(ast.yaml) }
 end

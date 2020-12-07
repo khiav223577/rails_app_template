@@ -1,1 +1,1 @@
-gem "spring-commands-rspec", group: :development
+gem 'spring-commands-rspec', group: :development

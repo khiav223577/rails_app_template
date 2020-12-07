@@ -1,1 +1,1 @@
-gem "rack-cors"
+gem 'rack-cors'

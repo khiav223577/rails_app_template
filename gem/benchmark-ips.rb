@@ -1,1 +1,1 @@
-gem "benchmark-ips", group: :development
+gem 'benchmark-ips', group: :development

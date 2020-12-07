@@ -1,1 +1,1 @@
-gem "active_storage_validations"
+gem 'active_storage_validations'

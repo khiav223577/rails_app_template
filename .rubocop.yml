@@ -1,31 +1,9 @@
-# A Ruby static code analyzer and formatter, based on the community
-# Ruby style guide. https://docs.rubocop.org
-gem 'rubocop', require: false
-gem 'rubocop-performance', require: false
-gem 'rubocop-rails', require: false
-
-file '.rubocop.yml', <<-CODE
 require:
   - rubocop-performance
   - rubocop-rails
 
 AllCops:
   DisabledByDefault: true
-  Exclude:
-    - bin/*
-    - app/assets/**/*
-    - app/javascript/**/*
-    - spec/fixtures/**/*
-    - db/migrate/*.rb
-    - db/schema.rb
-    - tmp/**/*
-    - vendor/**/*
-    - .git/**/*
-    - node_modules/**/*
-    - public/**/*
-    - Gemfile
-    - config.ru
-    - Rakefile
 
 #################### Lint ################################
 
@@ -1246,4 +1224,3 @@ Style/WordArray:
   Description: 'Use %w or %W for arrays of words.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#percent-w'
   Enabled: true
-CODE

@@ -9,4 +9,4 @@ config.middleware.use Rack::Cors do
   end
 end
 CODE
-update_yaml "config/settings.yml", "cors_origins" => ["*"]
+update_yaml 'config/settings.yml', 'cors_origins' => ['*']

@@ -4,4 +4,4 @@
 # objects), and support for multiple factories for the same class
 # (user, admin_user, and so on), including factory inheritance.
 # https://github.com/thoughtbot/factory_bot_rails
-gem "factory_bot_rails", group: [:development, :test]
+gem 'factory_bot_rails', group: [:development, :test]

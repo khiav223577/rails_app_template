@@ -1,1 +1,1 @@
-gem "zaru"
+gem 'zaru'
