@@ -7,8 +7,8 @@ init_gem "simplecov"
 init_gem "factory_bot_rails"
 init_gem "fakeredis"
 
-start = lines.index{|s| s =~ /Add additional requires below this line. Rails is not loaded until this point!/ } || 9
 lines = File.readlines("spec/rails_helper.rb")
+start = lines.index{|s| s =~ /Add additional requires below this line. Rails is not loaded until this point!/ } || 9
 Dir[File.join(recipe_path, "rspec/support/*")].each do |f|
   lib_name = File.basename(f, ".rb")
   file "spec/support/#{lib_name}.rb", File.read(f)
