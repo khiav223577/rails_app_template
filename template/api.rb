@@ -1,3 +1,5 @@
+$args = ARGV.join(' ').scan(/--?([^=\s]+)\s*(?:=?([^\s-]+))?/).to_h
+
 require_relative "../lib/base"
 
 init_gem "zaru"
