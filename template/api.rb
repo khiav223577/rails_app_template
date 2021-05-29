@@ -18,6 +18,7 @@ init_gem 'redis'
 init_gem 'redis-objects'
 init_gem 'rails-erd'
 init_gem 'rubocop'
+init_gem 'request_store'
 init_gem 'brypt'
 init_gem 'benchmark-ips'
 # init_gem "rails-i18n"
