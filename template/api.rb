@@ -1,6 +1,13 @@
 $args = ARGV.join(' ').scan(/--?([^=\s]+)\s*(?:=?([^\s-]+))?/).to_h
 
+def source_paths
+  [*super, __dir__]
+end
+
 require_relative '../lib/base'
+
+remove_file '.gitignore'
+copy_file 'files/.gitignore_template', '.gitignore'
 
 init_gem 'zaru'
 init_gem 'aasm'
