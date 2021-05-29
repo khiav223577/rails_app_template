@@ -48,10 +48,6 @@ module RequestHelper
     ActionMailer::Base.deliveries
   end
 
-  def response_body
-    JSON.parse(response.body)
-  end
-
   def expect_response_header(status, content_type = 'application/json')
     send_request
     expect(response).to have_http_status status
