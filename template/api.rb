@@ -9,6 +9,8 @@ require_relative '../lib/base'
 remove_file '.gitignore'
 copy_file 'files/.gitignore_template', '.gitignore'
 
+environment 'config.active_job.queue_adapter = :test', env: 'test'
+
 init_gem 'zaru'
 init_gem 'aasm'
 init_gem 'pagy'
