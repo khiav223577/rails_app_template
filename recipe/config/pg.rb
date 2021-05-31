@@ -8,10 +8,10 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= Settings.rails_max_threads %>
-  user: <%= Settings.pg_user %>
-  host: <%= Settings.pg_host %>
-  port: <%= Settings.pg_port %>
-  password: <%= Settings.pg_password %>
+  user: <%= ENV.fetch("PG_USER") { Settings.pg_user } %>
+  host: <%= ENV.fetch("PG_HOST") { Settings.pg_host } %>
+  port: <%= ENV.fetch("PG_PORT") { Settings.pg_port } %>
+  password: <%= ENV.fetch("PG_PASSWORD") { Settings.pg_password } %>
 development:
   <<: *default
   database: <%= Settings.pg_db_prefix + "_development" %>
